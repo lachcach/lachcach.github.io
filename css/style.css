@@ -3,6 +3,7 @@
 ::-webkit-scrollbar {
   width: 0px;
 }
+
 .progress-container {
   width: calc(100% - 88px);
   height: 5px;
@@ -26,8 +27,8 @@
   display: flex;
 }
 
-.main-container .inner-container {
-  width: 375px;
+.inner-container {
+  min-width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -36,25 +37,23 @@
   background: #161616;
 }
 
-.main-container .inner-container .contentBx {
-  max-width: 100%;
+
+.contentBx {
+  max-width: 1000px;
   padding: 40px;
   text-align: center;
 }
 
-.main-container .inner-container .contentBx h2 {
-  font-size: clamp(2rem, 5vw, 4rem);
+.contentBx h2 {
   color: #111111;
   text-transform: capitalize;
 }
-
-.main-container .inner-container .contentBx p {
-  font-size: clamp(1rem, 1.5vw, 2rem);
-  line-height: 1.4em;
-  color: #111111;
+.contentBx img{
+	witdh:100%;
+	height:100vh;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .main-container {
     position: absolute;
     width: 100%;
@@ -62,5 +61,20 @@
     flex-direction: column;
     transform: none !important;
   }
-	
+	.main-container {
+	top: 0px;
+	left: 0px;
+}
+	.inner-container {
+	  min-width: 100%;
+	  height: auto;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: 100vh;
+	  background: #161616;
+}
+	.progress-container {
+		display:none;
+	}
 }
