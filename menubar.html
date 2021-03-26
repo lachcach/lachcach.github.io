@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	
+    <title>Menu Bar</title>
+	  <link rel="stylesheet" href="css/css.css">
+  </head>
+  <body>
+	<!--	  Header-->
+	 <header>
+		<div class="top-menu">
+		 	<ul>
+				<li><a href=""><img src="img/logo-example.png"></a></li>
+				<li><a href=""><img src="img/logo-example.png"></a></li>
+			</ul>
+		 </div>
+	 	<nav id="MyNav">
+		 	<ul>
+				<li><a href="">DANH MUC</a></li>
+				<li><a href="">SU KIEN</a></li>
+				<li><a href="">LOP HOC</a></li>
+				<li><a href="">TIN TUC</a></li>
+				<li><a href="">VE CHUNG TOI</a></li>
+			</ul>
+			
+		 </nav>
+		 
+		 <a href="#" onClick="myFunction()" class="nav-toggle"><img src="img/logo-example.png"></a>
+	 </header>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("MyNav");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}  
+	</script>
+<!--	  zoom-->
+			
+	  
+  </body>
+</html>
