@@ -35,7 +35,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #161616;
 	padding-right: 60px;
 }
 .ruler-148{
@@ -45,18 +44,32 @@
 }
 
 .contentBx {	
-  padding: 92px 0px 88px 0px;
-  text-align: center;
-	witdh:315px!important;
-	height: 663px;
-	display: flex;
+	text-align: center;
+	height: 100vh;
+	padding: 176px 0;
+	margin-right: 90px;
 }
-
+.contentBx2 {	
+	padding: 319px 0;
+	text-align: center;
+	height: 100vh;
+	margin-right: 90px;
+}
 .contentBx h2 {
   color: #111111;
 }
+
 .contentBx img{
 	height:550px!important;
+	width: 315px;
+}
+.contentBx2 h2 {
+  color: #111111;
+}
+
+.contentBx2 img{
+	height:550px!important;
+	width: 315px;
 }
 .flex-fst{
 	display: flex;
