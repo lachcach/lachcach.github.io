@@ -101,7 +101,6 @@
 
 .ev-in-contentBx {
   text-align: center;
-	min-width: 100%;
 	width: 100%;
 }
 .ev-in-contentBx img{
@@ -112,4 +111,33 @@
 	text-align: center;
 	align-content: center;
 	align-items: center;
+}
+.ev-in-inner-container {
+  min-width: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #161616;
+}
+
+
+.news-in-contentBx {
+  text-align: center;
+	width: 100%;
+}
+.news-in-contentBx img{
+	width: 100%;
+}
+.news-in-contentBx h2{
+  color: white;
+	text-align: center;
+	align-content: center;
+	align-items: center;
+}
+.news-in-inner-container {
+  min-width: 33%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #161616;
 }

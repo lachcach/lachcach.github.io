@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Menu</title>
+  <title>CodePen - Horizontal Page Scroll</title>
   <link rel="stylesheet" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	 <link rel="stylesheet" href="css/css.css">
@@ -80,11 +80,38 @@
 			</div>
 		</div>
 <!-- partial:index.partial.html -->
-<div class="main-container">
-	<div class="sch">
-		
-	</div>
+<div class="main-container" data-0="transform: translateX(0%);" data-1000="transform: translateX(-65%);">
+	<section class="news-in-inner-container">
+		<div class="news-in-contentBx">
+			<img class="flex-fst" src="img/01.jpg" alt="#">
+        </div>
+	</section>
+	<section class="news-in-inner-container">
+		<div class="news-in-contentBx">			
+			<img class="flex-fst" src="img/01.jpg" alt="#">
+        </div>
+	</section>
+	<section class="news-in-inner-container">
+		<div class="news-in-contentBx">
+			<img class="flex-fst" src="img/01.jpg" alt="#">
+        </div>
+	</section>
+		<section class="news-in-inner-container">
+		<div class="news-in-contentBx">
+			<img class="flex-fst" src="img/01.jpg" alt="#">
+        </div>
+	</section>
+		<section class="news-in-inner-container">
+		<div class="news-in-contentBx">
+			<img class="flex-fst" src="img/01.jpg" alt="#">
+        </div>
+	</section>
+
 </div>
+	
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div> 
 <!-- partial -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script><script  src="js/script.js"></script>
 	<script src="js/process.js"></script>
@@ -99,7 +126,7 @@
 		  }
 		}  
 	</script>
-		<script>
+	<script>
 		function myFunction2() {
 		  var x = document.getElementById("MyNav2");
 		  if (x.style.display === "block") {
