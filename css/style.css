@@ -17,7 +17,7 @@
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 8px;
-  background: red!important;
+  background: #F74133!important;
   width: 0%;
 }
 .main-container {
