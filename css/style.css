@@ -180,3 +180,16 @@
 .news-in-contentBx-header img{
 	width: 100%;
 }
+.news-in-contentBx-header-stt{
+	width: auto;
+	height: auto;
+	background-color: gray;
+	padding: 0 30px;
+}
+.news-in-contentBx-header-img{
+	height: 600px;
+	width: auto;
+}
+.title-inner{
+	font-size: 31.25px;
+}

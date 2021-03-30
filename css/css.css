@@ -248,7 +248,17 @@ header{
 }
 @font-face{
 	font-family: "prata";
-	src: url("../font/Prata-Regular.ttf")
+	src: url("../font/Prata-Regular.ttf");
+}
+@font-face{
+	font-family: "roboto";
+	src: url("../font/Roboto-Medium.ttf");
+	font-weight: bold;
+}
+@font-face{
+	font-family: "roboto";
+	src: url("../font/Roboto-Regular.ttf");
+	font-weight: normal;
 }
 h1, h2, h3, h4{
 	font-family: "font-family: 'Be Vietnam', sans-serif;";
