@@ -260,8 +260,28 @@ header{
 	src: url("../font/Roboto-Regular.ttf");
 	font-weight: normal;
 }
-h1, h2, h3, h4{
-	font-family: "font-family: 'Be Vietnam', sans-serif;";
+h1{
+	font-size:7.451rem;
+	font-family: prata;
+}
+h2{
+	font-size:3.815rem;
+	font-family: prata;
+}
+h3{
+	font-size:2.441rem;
+	font-family: prata;
+}
+h4{
+	font-size:1.953rem;
+	font-family: prata;	
+}
+p{
+	font-size: 1rem;	
+	font-family: roboto;	
+}
+.text-red{
+	color:#f74133;
 }
 .map-info{
 	position: fixed;
@@ -285,11 +305,19 @@ h1, h2, h3, h4{
 	border-radius: 100%;
 }
 .scd-bar{
-	position: fixed;
-	
+	position: fixed;	
 	width: 100%;
-/*	width: calc(100% - 88px);*/
 	height: 88px;	
 	border-bottom: 1px solid white;
 	z-index: 999;
+}
+.hastag{
+	margin: 48px 0 0 0;
+	clear: both;
+}
+.hastag h2{
+	color: white;
+	background-color: #F74133;	
+	padding: 0 20px;
+	width: 160px;
 }
