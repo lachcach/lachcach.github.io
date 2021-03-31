@@ -280,6 +280,11 @@ p{
 	font-size: 1rem;	
 	font-family: roboto;	
 }
+.p-button{
+	font-size: 1.25rem;	
+	font-family: roboto;
+	color: white;
+}
 .text-red{
 	color:#f74133;
 }
