@@ -11,7 +11,7 @@
   background: #ccc;
 	position: fixed;
 	bottom: 0;
-	left: 80x;
+	left: 80px;
 }
 
 /* The progress bar (scroll indicator) */
@@ -52,7 +52,7 @@
 .contentBx {	
 	text-align: center;
 	height: 100vh;
-	padding: 170px 0;
+	padding: 160px 0;
 	margin-right: 90px;
 }
 .contentBx2 {	
@@ -204,4 +204,20 @@
 .lrn-in-contentBx-row{
 	height: 50%;
 	padding-bottom: 80px;
+}
+button{
+	width: 365px;
+	height: 64px;
+	border: 1px solid #F74133;
+	margin: 0 auto;
+	background: none;
+	font-size: 20px;
+	line-height: 62px;
+	color: #f74133;
+}
+button:hover{
+	border: none;
+	background: #F74133;
+	transition-duration: 0.2s;
+	color: white;
 }
