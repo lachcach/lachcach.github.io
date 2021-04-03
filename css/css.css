@@ -590,18 +590,46 @@ p{
 	transition-duration: 0.1s;
 	color: white;
 }
+<<<<<<< Updated upstream
 /*<<<<<<< HEAD*/
+=======
+
+>>>>>>> Stashed changes
 .title{
 	position: absolute;
 	bottom:5vh;
 	left:20vh;
 }
+<<<<<<< Updated upstream
+=======
+#myContent{
+/*	background: red;*/
+	position: relative;
+}
+.bac-map{
+	position: absolute;
+	z-index: 0;
+	left: 50px;
+	top:0px
+}
+.map img{
+	transition: all 0.5s;
+}
+.map img:hover{
+	filter: drop-shadow(0px 0px 10	px white);
+/*	width: 100px;*/
+	color: yellow;
+}
+/*
+>>>>>>> Stashed changes
 .error-page{
 	text-align: center; 
 	align-items: center; 
 	line-height: inherit; 
 	padding-top: 80px;
 }
+*/
+/*
 .error-page img{
 	width: 50%;
 	position: absolute;
@@ -610,4 +638,8 @@ p{
 	left:50%;
 	transform: translate(-50%, 0%);
 	z-index: -9999;
+<<<<<<< Updated upstream
 }
+=======
+}*/
+>>>>>>> Stashed changes
