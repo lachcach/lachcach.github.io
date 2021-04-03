@@ -560,9 +560,16 @@ p{
 .lrn-in-contentBx{
 	width: 100%;
 	padding: 80px 96px;
+/*
+	display:flex;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	justify-content:space-between;
+*/
 }
 .lrn-in-contentBx-row{
-	height: 50%;
+	height: 50vh;
 	padding-bottom: 80px;
 }
 .button{
