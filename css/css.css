@@ -583,12 +583,12 @@ p{
 	transition-duration: 0.1s;
 	color: white;
 }
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 .title{
 	position: absolute;
 	bottom:5vh;
 	left:20vh;
-=======
+}
 .error-page{
 	text-align: center; 
 	align-items: center; 
@@ -603,5 +603,4 @@ p{
 	left:50%;
 	transform: translate(-50%, 0%);
 	z-index: -9999;
->>>>>>> 5d38c3139c0cbac6690e86bf6b611c61954cf651
 }
