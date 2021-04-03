@@ -311,7 +311,7 @@ p{
 	position: fixed;
 	top:0;
 	right: 0px;
-	width: 500px;
+	width: 450px;
 	height: 100vh;
 	background-color: white;
 	border: 1px solid #F74133;
@@ -588,20 +588,16 @@ p{
 	border: none;
 	background: #F74133;
 	transition-duration: 0.1s;
-	color: white;
+	color: white!important;
 }
-<<<<<<< Updated upstream
-/*<<<<<<< HEAD*/
-=======
-
->>>>>>> Stashed changes
+.button a p:hover{	
+	color: white!important;
+}
 .title{
 	position: absolute;
 	bottom:5vh;
 	left:20vh;
 }
-<<<<<<< Updated upstream
-=======
 #myContent{
 /*	background: red;*/
 	position: relative;
@@ -620,16 +616,14 @@ p{
 /*	width: 100px;*/
 	color: yellow;
 }
-/*
->>>>>>> Stashed changes
+
 .error-page{
 	text-align: center; 
 	align-items: center; 
 	line-height: inherit; 
 	padding-top: 80px;
 }
-*/
-/*
+
 .error-page img{
 	width: 50%;
 	position: absolute;
@@ -638,8 +632,5 @@ p{
 	left:50%;
 	transform: translate(-50%, 0%);
 	z-index: -9999;
-<<<<<<< Updated upstream
+
 }
-=======
-}*/
->>>>>>> Stashed changes
