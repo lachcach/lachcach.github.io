@@ -559,7 +559,7 @@ p{
 }
 .lrn-in-contentBx{
 	width: 100%;
-	padding: 144px 96px;
+	padding: 80px 96px;
 }
 .lrn-in-contentBx-row{
 	height: 50%;
@@ -583,8 +583,25 @@ p{
 	transition-duration: 0.1s;
 	color: white;
 }
+<<<<<<< HEAD
 .title{
 	position: absolute;
 	bottom:5vh;
 	left:20vh;
+=======
+.error-page{
+	text-align: center; 
+	align-items: center; 
+	line-height: inherit; 
+	padding-top: 80px;
+}
+.error-page img{
+	width: 50%;
+	position: absolute;
+	bottom:0;
+	margin: 0 auto;
+	left:50%;
+	transform: translate(-50%, 0%);
+	z-index: -9999;
+>>>>>>> 5d38c3139c0cbac6690e86bf6b611c61954cf651
 }
