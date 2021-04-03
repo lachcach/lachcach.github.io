@@ -467,6 +467,13 @@ p{
 		padding: 0!important;
 	}
 }
+.ev-in-inner-header{
+	min-width: 100%;
+	justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #161616;
+}
 .ev-in-inner-container {
   min-width: 50%;
   justify-content: center;
@@ -557,7 +564,7 @@ p{
 	height: 50%;
 	padding-bottom: 80px;
 }
-button{
+.button{
 	width: 365px;
 	height: 64px;
 	border: 1px solid #F74133;
@@ -565,10 +572,13 @@ button{
 	font-size: 20px;
 	line-height: 62px;
 	color: #f74133;
+	margin: 0 auto;
+	cursor: pointer;
+	text-align: center;
 }
-button:hover{
+.button:hover{
 	border: none;
 	background: #F74133;
-	transition-duration: 0.2s;
+	transition-duration: 0.1s;
 	color: white;
 }
