@@ -1,7 +1,7 @@
-var map = document.getElementById("map"),
+var canadamap = document.getElementById("canada-map"),
 	provinceInfo = document.getElementById("provinceInfo"),
-	allProvinces = map.querySelectorAll("g");
-	map.addEventListener("click", function(e){ 
+	allProvinces = canadamap.querySelectorAll("g");
+	canadamap.addEventListener("click", function(e){ 
 		var province = e.target.parentNode;
 		if(e.target.nodeName == "path") {
 		for (var i=0; i < allProvinces.length; i++) {
