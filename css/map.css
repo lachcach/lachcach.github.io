@@ -1,0 +1,80 @@
+#canada-map {
+	height: 100vh;
+	width: 100%;
+	padding: 0 80px;
+}
+
+#canada-map g {
+	transition: 0.2s;
+	fill:black;
+	stroke:#F74133;
+	stroke-width:2;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	display: block;
+}
+
+#canada-map g:hover {
+  fill: #F74133;
+}
+
+.active:hover {
+  fill: #F74133 !important;
+}
+
+#provinceInfo {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 450px;
+	height: 100vh;
+	z-index: 1000;
+	background-color: white!important;
+	border: 1px solid #F74133;
+	padding: 60px 52px;
+	background: rgba(0, 0, 0, 0.2);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+@media all and (max-width: 1024px) {
+  #provinceInfo {
+    width: 100%;
+    position: static;
+    background: none;
+  }
+
+  #provinceInfo.show p {
+    color: #000 !important;
+  }
+	#map{
+		padding:0;
+	}
+}
+#provinceInfo.show {
+  opacity: 1;
+}
+
+
+
+#provinceInfo img {
+  width: 350px;
+	height: 350px;
+	border-radius: 100%;
+	margin: 0 auto;
+}
+#canada-map img{
+	height:100vh;
+}
+.map-bg{
+	transition: 0.2s;
+	fill:black;
+	stroke:white!important;
+	stroke-width:0.8!important;
+	stroke-linecap:round;
+	stroke-linejoin:round;
+	display: block;
+}
+.map-bg:hover{
+	 fill: #161616!important;
+}

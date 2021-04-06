@@ -8,6 +8,32 @@ body{
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+	cursor: none!important;
+}
+.cursor {
+  top: -100px;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #F74133;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transition: all 0.1s linear, top 0ms linear, left 0ms ease-in-out;
+  z-index: 10000;
+}
+
+.cursor-image-show {
+  width: 400px;
+  height: 400px;
+  top: auto;
+  left: auto;
+  border-radius: 100;
+  transform: translate(-40%, -50%);
+  background-size: cover;
+  transition: all 0.2s linear, top 0ms linear, left 0ms ease-in-out;
+  border: none;
+  mix-blend-mode: normal;
+  background-size: 100;
 }
 a{
 	text-decoration: none;
@@ -16,6 +42,7 @@ a{
 	transition-duration: 0.3s!important;
 	color: #F74133;
 	transition-duration: 0.2s;
+	cursor: none!important;
 }
 ul li a:hover{
 	color:#f74133!important;
@@ -180,13 +207,11 @@ header{
 	width: 80px;
 	height: 80px;
 	background-color: antiquewhite;
-	cursor: pointer;
 	position: absolute;
 	top: 0;
 	right: 0;
 }
 #myWindow {
-	cursor: grab;
 	display: flex;
 	align-items: center;
 }
@@ -301,38 +326,7 @@ p{
 .text-red{
 	color:#f74133;
 }
-.map{
-	overflow:none;
-}
-.map img{
-	height:100vh;
-}
-.map-info{
-	position: fixed;
-	top:0;
-	right: 0px;
-	width: 500px;
-	height: 100vh;
-	background-color: white;
-	border: 1px solid #F74133;
-	padding: 60px 52px;
-	margin: 0 auto;
-}
-.map-info h3{
-	text-align: center;
-}
-.map-info-ava{
-	width: 250px;
-	height: 250px;
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-}
-.map-info-ava img{ 
-	width: 100%;
-	height: 100%;
-	border-radius: 100%;
-}
+
 .scd-bar{
 	position: fixed;	
 	width: 100%;
@@ -605,27 +599,34 @@ p{
 	line-height: 62px;
 	color: #f74133;
 	margin: 0 auto;
-	cursor: pointer;
 	text-align: center;
 }
 .button:hover{
 	border: none;
 	background: #F74133;
 	transition-duration: 0.1s;
-	color: white;
+	color: white!important;
 }
-/*<<<<<<< HEAD*/
+.button a p:hover{	
+	color: white!important;
+}
 .title{
 	position: absolute;
 	bottom:5vh;
 	left:20vh;
 }
+#myContent{
+/*	background: red;*/
+	position: relative;
+}
+
 .error-page{
 	text-align: center; 
 	align-items: center; 
 	line-height: inherit; 
 	padding-top: 80px;
 }
+
 .error-page img{
 	width: 50%;
 	position: absolute;
@@ -634,4 +635,5 @@ p{
 	left:50%;
 	transform: translate(-50%, 0%);
 	z-index: -9999;
+
 }
