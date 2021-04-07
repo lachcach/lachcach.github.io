@@ -8,16 +8,7 @@ body{
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-	cursor: none!important;
-}
-.text-and-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  height: 100px;
-  display: flex;
-  align-items: flex-start;
+  transition: all 0.2s linear;
 }
 .text-and-images .single-image {
   position: relative;
@@ -36,29 +27,27 @@ body{
   align-self: flex-end;
 }
 .cursor {
-  top: -100px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 3px solid #F74133;
   border-radius: 50%;
-  position: fixed;
+  position: absolute;
+  transition: all 0.1s linear;
   pointer-events: none;
-  transition: all 0.1s linear, top 0ms linear, left 0ms ease-in-out;
-  z-index: 10000;
+	z-index: 9999;
 }
+.hoverc {
 
-.cursor-image-show {
-  width: 400px;
-  height: 400px;
-  top: auto;
-  left: auto;
-  border-radius: 100;
-  transform: translate(-40%, -50%);
-  background-size: cover;
-  transition: all 0.2s linear, top 0ms linear, left 0ms ease-in-out;
-  border: none;
-  mix-blend-mode: normal;
-  background-size: 100;
+}
+.hoverc:hover {
+  opacity: 1;
+  -webkit-text-fill-color: white;
+  text-fill-color: white;
+}
+.hoverc:hover ~ .cursor {
+  transform: scale(1.4);
+  mix-blend-mode: difference;
+  background: white;
 }
 a{
 	text-decoration: none;
