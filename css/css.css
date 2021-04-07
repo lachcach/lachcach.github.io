@@ -9,7 +9,6 @@ body{
       -ms-user-select: none;
           user-select: none;
   transition: all 0.2s linear;
-	cursor:none;
 }
 .text-and-images .single-image {
   position: relative;
@@ -39,14 +38,28 @@ body{
   transition-timing-function: ease-in-out;
   transition-property: transform, background;
   transform-origin: 100% 100%;
-  z-index: 9999;
+  z-index: -1;
   backdrop-filter: sepia(100%);
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  min-height: 10vh;
+  margin: auto;
+}
+
 .nav-links {
+  display: flex;
+  list-style-type: none;
 }
 
 .nav-links li {
+  margin-left: 40px;
+  font-size: 20px;
+  padding: 20px;
   transition: all 0.3s ease-in-out;
 }
 

@@ -1,16 +1,21 @@
-let hoverc = document.querySelector('hoverc');
-let curs = document.querySelector('.cursor');
+const mouseCursor = document.querySelector(".cursor");
+const navLinks = document.querySelectorAll(".nav-links li");
 
-document.addEventListener('mousemove', (e) => {
-  let x = e.pageX;
-  let y = e.pageY;
-  curs.style.left = (x - 22) + "px";
-  curs.style.top = (y - 22) + "px";
-});
+window.addEventListener("mousemove", cursorFunc);
 
-document.addEventListener('mouseleave', (e) => {
-  let x = e.pageX;
-  let y = e.pageY;
-  curs.style.left = (x - 22) + "px";
-  curs.style.top = (y - 22) + "px";
+function cursorFunc(e) {
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px";
+}
+
+navLinks.forEach(function (link) {
+  link.addEventListener("mouseout", function () {
+    mouseCursor.classList.remove("link-grow");
+    link.classList.remove("hovered-link");
+  });
+
+  link.addEventListener("mouseover", function () {
+    mouseCursor.classList.add("link-grow");
+    link.classList.add("hovered-link");
+  });
 });
