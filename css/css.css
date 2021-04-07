@@ -9,6 +9,7 @@ body{
       -ms-user-select: none;
           user-select: none;
   transition: all 0.2s linear;
+	cursor:none;
 }
 .text-and-images .single-image {
   position: relative;
@@ -27,27 +28,41 @@ body{
   align-self: flex-end;
 }
 .cursor {
-  width: 40px;
-  height: 40px;
-  border: 3px solid #F74133;
+  width: 3rem;
+  height: 3rem;
+  border: solid 1px white;
   border-radius: 50%;
   position: absolute;
-  transition: all 0.1s linear;
+  transform: translate(-50%, -50%);
   pointer-events: none;
-	z-index: 9999;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-property: transform, background;
+  transform-origin: 100% 100%;
+  z-index: 9999;
+  backdrop-filter: sepia(100%);
 }
-.hoverc {
 
+.nav-links {
 }
-.hoverc:hover {
-  opacity: 1;
-  -webkit-text-fill-color: white;
-  text-fill-color: white;
+
+.nav-links li {
+  transition: all 0.3s ease-in-out;
 }
-.hoverc:hover ~ .cursor {
-  transform: scale(1.4);
-  mix-blend-mode: difference;
-  background: white;
+
+/* Dynamic Classes */
+.link-grow {
+  transform: scale(2);
+  background-color: rgba(255, 255, 255, 0.534);
+}
+
+.hovered-link {
+  color: black;
+}
+
+.img-focus {
+  height: 5rem;
+  width: 5rem;
 }
 a{
 	text-decoration: none;

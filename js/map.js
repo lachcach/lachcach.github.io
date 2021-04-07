@@ -1,24 +1,21 @@
-var canadamap = document.getElementById("canada-map"),
- provinceInfo = document.getElementById("provinceInfo"),
- allProvinces = canadamap.querySelectorAll("g");
+const mouseCursor = document.querySelector(".cursor");
+const navLinks = document.querySelectorAll(".nav-links li");
 
-canadamap.addEventListener("click", function(e){ 
-  var province = e.target.parentNode;
-  if(e.target.nodeName == "path") {
-  for (var i=0; i < allProvinces.length; i++) {
-   allProvinces[i].classList.remove("active");
-  }
-  province.classList.add("active");
-  var provinceName = province.querySelector("title").innerHTML,
-	  provinceButton = province.querySelector("btn").innerHTML,
-  provincePara = province.querySelector("desc p");
-  sourceImg = province.querySelector("img"),
-  imgPath = "img/";
-  provinceInfo.innerHTML = "";
-  provinceInfo.insertAdjacentHTML("afterbegin", "<img src="+imgPath + sourceImg.getAttribute('xlink:href')+" alt='"+sourceImg.getAttribute('alt')+"'><h3>"+provinceName+"</h3><p>"+provincePara.innerHTML+"</p><div>"+provinceButton+"</div>");
-  provinceInfo.classList.add("show");
-  }else{
-//   provinceInfo.style.opacity = '0';
-   provinceInfo.classList.remove("show");
-  }
- })
+window.addEventListener("mousemove", cursorFunc);
+
+function cursorFunc(e) {
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px";
+}
+
+navLinks.forEach(function (link) {
+  link.addEventListener("mouseout", function () {
+    mouseCursor.classList.remove("link-grow");
+    link.classList.remove("hovered-link");
+  });
+
+  link.addEventListener("mouseover", function () {
+    mouseCursor.classList.add("link-grow");
+    link.classList.add("hovered-link");
+  });
+});
