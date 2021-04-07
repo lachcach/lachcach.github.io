@@ -8,7 +8,7 @@ document.addEventListener("mousemove", (e) => {
 
 let images = document.querySelectorAll(".text-and-images .image--inner");
 let servicesImages = [
-    "url('../img/mua roi web-01.jpg')",
+    "url('img/mua roi web-01.jpg')",
     "url('https://assets.codepen.io/1651485/summerNew.jpg')",
     "url('https://assets.codepen.io/1651485/autumnNew.png')",
     "url('https://assets.codepen.io/1651485/winterNew.jpg')"

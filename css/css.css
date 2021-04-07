@@ -10,6 +10,31 @@ body{
           user-select: none;
 	cursor: none!important;
 }
+.text-and-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100px;
+  display: flex;
+  align-items: flex-start;
+}
+.text-and-images .single-image {
+  position: relative;
+  display: block;
+  width: 25%;
+  margin: 5px 50px;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+.text-and-images .single-image span {
+  font-size: 40px;
+  font-family: "Libre Baskerville", serif;
+}
+.text-and-images .single-image:nth-child(2),
+.text-and-images .single-image:nth-child(4) {
+  align-self: flex-end;
+}
 .cursor {
   top: -100px;
   width: 50px;
