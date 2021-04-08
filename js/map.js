@@ -22,5 +22,3 @@ canadamap.addEventListener("click", function(e){
    provinceInfo.classList.remove("show");
   }
  })
-
-

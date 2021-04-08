@@ -1,26 +1,21 @@
-let curs = document.querySelector(".cursor");
-document.addEventListener("mousemove", (e) => {
-    let x = e.clientX;
-    let y = e.clientY;
-    curs.style.left = x - 25 + "px";
-    curs.style.top = y - 25 + "px";
-});
+const mouseCursor = document.querySelector(".cursor");
+const navLinks = document.querySelectorAll(".nav-links li");
 
-let images = document.querySelectorAll(".text-and-images .image--inner");
-let servicesImages = [
-    "url('../img/mua roi web-01.jpg')",
-    "url('https://assets.codepen.io/1651485/summerNew.jpg')",
-    "url('https://assets.codepen.io/1651485/autumnNew.png')",
-    "url('https://assets.codepen.io/1651485/winterNew.jpg')"
-];
+window.addEventListener("mousemove", cursorFunc);
 
-images.forEach((image, i) => {
-    image.addEventListener("mouseover", (e) => {
-        curs.classList.add("cursor-image-show");
-        curs.style.backgroundImage = servicesImages[i];
-    });
-    image.addEventListener("mouseleave", (e) => {
-        curs.classList.remove("cursor-image-show");
-        curs.style.backgroundImage = "none";
-    });
+function cursorFunc(e) {
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px";
+}
+
+navLinks.forEach(function (link) {
+  link.addEventListener("mouseout", function () {
+    mouseCursor.classList.remove("link-grow");
+    link.classList.remove("hovered-link");
+  });
+
+  link.addEventListener("mouseover", function () {
+    mouseCursor.classList.add("link-grow");
+    link.classList.add("hovered-link");
+  });
 });

@@ -8,32 +8,57 @@ body{
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-	cursor: none!important;
+  transition: all 0.2s linear;
+}
+.text-and-images .single-image {
+  position: relative;
+  display: block;
+  width: 25%;
+  margin: 5px 50px;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+.text-and-images .single-image span {
+  font-size: 40px;
+  font-family: "Libre Baskerville", serif;
+}
+.text-and-images .single-image:nth-child(2),
+.text-and-images .single-image:nth-child(4) {
+  align-self: flex-end;
 }
 .cursor {
-  top: -100px;
-  width: 50px;
-  height: 50px;
-  border: 3px solid #F74133;
+  width: 3rem;
+  height: 3rem;
+  border: solid 1px white;
   border-radius: 50%;
-  position: fixed;
+  position: absolute;
+  transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: all 0.1s linear, top 0ms linear, left 0ms ease-in-out;
-  z-index: 10000;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-property: transform, background;
+  transform-origin: 100% 100%;
+  z-index: 9999;
+  backdrop-filter: sepia(100%);
 }
 
-.cursor-image-show {
-  width: 400px;
-  height: 400px;
-  top: auto;
-  left: auto;
-  border-radius: 100;
-  transform: translate(-40%, -50%);
-  background-size: cover;
-  transition: all 0.2s linear, top 0ms linear, left 0ms ease-in-out;
-  border: none;
-  mix-blend-mode: normal;
-  background-size: 100;
+.nav-links li {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dynamic Classes */
+.link-grow {
+  transform: scale(2);
+  background-color: rgba(255, 255, 255, 0.534);
+}
+
+.hovered-link {
+  color: black;
+}
+
+.img-focus {
+  height: 5rem;
+  width: 5rem;
 }
 a{
 	text-decoration: none;
