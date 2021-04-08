@@ -610,11 +610,7 @@ p{
 .button a p:hover{	
 	color: white!important;
 }
-.title{
-	position: absolute;
-	bottom:5vh;
-	left:20vh;
-}
+
 #myContent{
 /*	background: red;*/
 	position: relative;
@@ -637,3 +633,13 @@ p{
 	z-index: -9999;
 
 }
+
+/*QTUNG*/
+.title{
+	position: absolute;
+	bottom:10vh;
+	left:20vh;
+}
+
+
+/*QTUNG*/
