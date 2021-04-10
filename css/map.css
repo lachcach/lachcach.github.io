@@ -86,6 +86,7 @@
 	font-family: BeVietnam;
 	font-weight: bolder;
 	transition: 0.5s;
+	color:#F74133;
 }
 #provinceInfo div:hover{
 	border: none;
