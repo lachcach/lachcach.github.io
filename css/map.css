@@ -1,7 +1,10 @@
+.map{
+	padding-left:80px;
+	width: 100%;
+}
 #canada-map {
 	width: 100%;
 	height: 100vh;
-	padding: 0 80px;
 }
 
 #canada-map g {
@@ -9,8 +12,6 @@
 	fill:black;
 	stroke:#F74133;
 	stroke-width:2;
-	stroke-linecap:round;
-	stroke-linejoin:round;
 	display: block;
 }
 
@@ -40,38 +41,67 @@
 @media all and (max-width: 1024px) {
   #provinceInfo {
     width: 100%;
-    position: static;
     background: none;
   }
 
   #provinceInfo.show p {
     color: #000 !important;
   }
-	#map{
-		padding:0;
+	.map{
+		padding:0!important;
+		width: 100%;
 	}
 }
 #provinceInfo.show {
   opacity: 1;
 }
-
-
+#provinceInfo a{
+	font-family: BeVietnam;
+}
+#provinceInfo h3{
+	text-align: center;
+	padding-top: 30px;
+	font-family: prata;
+}
+#provinceInfo p{
+	padding-top: 16px;
+	font-size: 20px;
+}
 
 #provinceInfo img {
-  width: 350px;
+	width: 350px;
 	height: 350px;
 	border-radius: 100%;
 	margin: 0 auto;
 }
-#canada-map img{
-	height:100vh;
-}
-.title{
+#provinceInfo div{
+	position: absolute;
+	bottom: 64px;
+	border: 1px solid #F74133;
+	background-color: white;
+	width: 340px;
+	height: 64px;
 	text-align: center;
+	line-height: 60px;
+	font-family: BeVietnam;
+	font-weight: bolder;
+	transition: 0.5s;
+}
+#provinceInfo div:hover{
+	border: none;
+	background-color: #F74133;
+	color:white!important;
+}
+#provinceInfo div a{
+	width: 340px!important;
+	height: 64px!important;
+}
+#provinceInfo div a:hover{
+	color:white;
 }
 .map-bg{
 	transition: 0.2s;
-	fill:black;
+	fill:none!important;
 	stroke:white!important;
 	stroke-width:0.8!important;
 	stroke-linecap:round;
@@ -79,5 +109,5 @@
 	display: block;
 }
 .map-bg:hover{
-	 fill: #161616!important;
+	 fill: none!important;
 }

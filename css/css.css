@@ -311,18 +311,11 @@ header{
 	src: url("../font/Roboto-Regular.ttf");
 	font-weight: normal;
 }
-/*
 @font-face{
-	font-family: "roboto";
-	src: url("../font/Roboto-Black.ttf");
-	font-weight: bolder;
+	font-family: "BeVietnam";
+	src: url("../font/BeVietnam-Regular.ttf");
+	font-weight: normal;
 }
-@font-face{
-	font-family: "roboto";
-	src: url("../font/Roboto-Black.ttf");
-	font-weight: bold;
-}
-*/
 h1{
 	font-size:7.451rem;
 	font-family: prata;
@@ -341,12 +334,11 @@ h4{
 }
 p{
 	font-size: 1rem;	
-	font-family: roboto;	
+	font-family: BeVietnam;	
 }
 .p-button{
 	font-size: 1.25rem;	
-	font-family: roboto;
-	font-weight: normal;
+	font-family: BeVietnam;
 }
 .text-red{
 	color:#f74133;
