@@ -1,3 +1,4 @@
+
 .map{
 	padding-left:80px;
 	width: 100%;
@@ -5,6 +6,9 @@
 #canada-map {
 	width: 100%;
 	height: 100vh;
+	position: absolute;
+	top:0!important;
+	left: 80px;
 }
 
 #canada-map g {
@@ -25,10 +29,10 @@
 
 #provinceInfo {
 	position: absolute;
-	top: 0;
+	top: 88px;
+	bottom: 36px;
 	right: 0;
 	width: 450px;
-	height: 100vh;
 	z-index: 500;
 	background-color: white!important;
 	border: 1px solid #F74133;
@@ -51,6 +55,11 @@
 		padding:0!important;
 		width: 100%;
 	}
+	#canada-map {
+	left: 0px;
+	top: 70px;
+	transform:  scaleX(60%);
+}
 }
 #provinceInfo.show {
   opacity: 1;
@@ -111,4 +120,63 @@
 }
 .map-bg:hover{
 	 fill: none!important;
+}
+
+#provincehover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 390px;
+	height: 210px;
+	z-index: 5000;
+	background-color: rgba(255,255,255,0.30) !important;
+	padding: 15px;
+	transition-duration: 200ms;
+  	transition-timing-function: ease-out;
+  	transform: translate(-50%, -130%);
+/*	hide*/
+	opacity: 0;
+	overflow: hidden;
+	visibility: hidden;
+	display: none;
+}
+#provincehover.show {
+  	opacity: 1;
+	visibility: visible;
+	display: block;
+}
+.map-hover{
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+.map-hover-ava{
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.map-hover-content{
+	width: 145px;
+	height: 100%;
+/*	background: red;#BacNinh*/
+	font-size: 16px;
+	margin-left: 30px;
+}
+.map-hover-content h3{
+	font-size: 31.25px;	
+	line-height: 42px;
+	color: white;
+	margin-bottom: 16px;
+}
+.map-hover-hashtag{
+	font-size: 20px;
+	margin: 0;
+	color: white;
+	background-color: rgba(247,65,51,1);
+	padding-right:8px;
+/*	display: block;*/
+}
+.space{
+	height: 4px;
 }
