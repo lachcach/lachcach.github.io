@@ -88,8 +88,8 @@ body{
 	background-color: #F74133;
 }
 #provinceInfo .btninfo a{
-	width: 340px!important;
-	height: 64px!important;
+	width: 340px;
+	height: 64px;
 }
 #provinceInfo .btninfo:hover a{
 	color:white;
@@ -208,14 +208,26 @@ body{
 	  z-index: 99999;
 	  overflow: hidden;
 	  top: 724px;
+	  display: flex;
   }
 	#provinceInfo img {
 	width: 250px;
 	height: 250px;
 }
+	#provinceInfo h3{
+		top:-500px;
+		left: 265px;
+	}
   #provinceInfo.show p {
     color: #000 !important;
   }
+	#provinceInfo .btninfo{
+		position: inherit;
+	}
+	.all-map{
+		width: 50% !important;
+		float: left;
+	}
 	.map{
 		padding:0!important;
 		width: 100%;
