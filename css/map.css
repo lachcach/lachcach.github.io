@@ -83,7 +83,7 @@
 	border-radius: 100%;
 	margin: 0 auto;
 }
-#provinceInfo div{
+#provinceInfo .btninfo{
 	position: absolute;
 	bottom: 64px;
 	border: 1px solid #F74133;
@@ -97,22 +97,27 @@
 	transition: 0.5s;
 	color:#F74133;
 }
-#provinceInfo div:hover{
+#provinceInfo .btninfo:hover{
 	border: none;
 	background-color: #F74133;
 	color:white!important;
 }
-#provinceInfo div a{
+#provinceInfo .btninfo a{
 	width: 340px!important;
 	height: 64px!important;
 }
-#provinceInfo div a:hover{
+#provinceInfo .btninfo a:hover{
 	color:white;
+}
+.space-info{
+	width: 4px;
+/*	height: 30px;*/
+/*	background:blue;*/
 }
 .map-bg{
 	transition: 0.2s;
 	fill:none!important;
-	stroke:white!important;
+	stroke: #F74133 !important;
 	stroke-width:0.8!important;
 	stroke-linecap:round;
 	stroke-linejoin:round;
@@ -178,4 +183,24 @@
 }
 .space{
 	height: 4px;
+}
+.tag{
+/*	background: blue;*/
+	display: flex;
+	justify-content: center
+}
+.show-map{
+	font-size: 20px;
+	color: white;
+	background-color: rgba(247,65,51,1);
+	padding-right:8px;
+	font-family: prata!important;
+	
+}
+.show-map span{
+	font-size: 31.25px;	
+	line-height: 42px;
+	color: white;
+	margin-bottom: 16px;
+	
 }
