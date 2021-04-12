@@ -1,6 +1,10 @@
 *{
-	cursor: none!important;
-	padding: 0;
+/*	cursor: none!important;*/
+	padding: 0;	
+	-webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 body{
     
@@ -8,10 +12,6 @@ body{
 	overflow-y: scroll;
 	margin: 0;
 	background-color: #111;
-	-webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
   transition: all 0.2s linear;
 }
 .text-and-images .single-image {
