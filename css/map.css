@@ -1,3 +1,6 @@
+*{
+	overflow: hidden!important;
+}
 body{
 	height: 100vh;
 	overflow: hidden;
@@ -36,8 +39,7 @@ body{
 	bottom: 36px;
 	right: 0;
 	width: 450px;
-	height: 900px;
-	z-index: 500;
+	z-index: 999;
 	background-color: white!important;
 	border: 1px solid #F74133;
 	padding: 60px 52px;
@@ -45,10 +47,12 @@ body{
 	opacity: 0;
 	transition: 0.5s;
 	display: none;
+	visibility: hidden;
 }
 #provinceInfo.show {
   opacity: 1;
 	display: block;
+	visibility: visible;
 }
 #provinceInfo a{
 	font-family: BeVietnam;
@@ -67,7 +71,6 @@ body{
 	width: 350px;
 	height: 350px;
 	border-radius: 100%;
-	margin: 0 auto;
 }
 #provinceInfo .btninfo{
 	position: absolute;
@@ -94,10 +97,13 @@ body{
 #provinceInfo .btninfo:hover a{
 	color:white;
 }
+#provinceInfo .hastagflex{
+		display: flex;
+	    justify-content: center;
+	}
 .space-info{
 	width: 4px;
-/*	height: 30px;*/
-/*	background:blue;*/
+	height: 8px;
 }
 .map-bg{
 	transition: 0.2s;
@@ -173,11 +179,7 @@ body{
 .space{
 	height: 8px;
 }
-.tag{
-/*	background: blue;*/
-	display: flex;
-	justify-content: center
-}
+
 .show-map{
 	font-size: 20px;
 	color: white;
@@ -200,15 +202,20 @@ body{
 /*		position: relative;*/
 /*		background: blue;*/
 	}
+	.tag{
+	display: flex;
+	justify-content: center
+}
   #provinceInfo {
 	
     width: 100%;
 	  height: 300px;
    	bottom: 0;
-	  z-index: 99999;
+	  z-index: 999;
 	  overflow: hidden;
 	  top: 724px;
 	  display: flex;
+	  padding: 25px 0!important;
   }
 	#provinceInfo img {
 	width: 250px;
@@ -220,13 +227,22 @@ body{
 	}
   #provinceInfo.show p {
     color: #000 !important;
+	 
   }
 	#provinceInfo .btninfo{
 		position: inherit;
 	}
-	.all-map{
-		width: 50% !important;
-		float: left;
+	.info{
+		display: flex;
+	}
+	.info p{
+		display: none;
+	}
+	.all-hastag1{
+		 padding-left: 25px;
+	}
+	.all-hastag2{
+		 padding-left: 40px;
 	}
 	.map{
 		padding:0!important;
@@ -234,13 +250,29 @@ body{
 	}
 	#canada-map {
 	left: 0px;
-	top: 46px;
+	top: 70px;
 	transform:  scale(1);
-		z-index: 998;
+	z-index: 998;
 	}
 	#provincehover.show {
   	opacity: 0;
 	visibility: hidden;
 	display: none;
 }
+	#provinceInfo .btninfo{
+	position: absolute;
+	bottom: 40px;
+}
+	#provinceInfo h3{
+		text-align: left;
+	}
+	.tag{
+	display: flex;
+	justify-content: flex-start;
+}
+	#provinceInfo .hastagflex{
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
 }

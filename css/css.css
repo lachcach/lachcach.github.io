@@ -33,7 +33,7 @@ body{
 .cursor {
   width: 3rem;
   height: 3rem;
-  border: solid 2px WHITE;
+  border: solid 1px WHITE;
   border-radius: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
@@ -208,13 +208,15 @@ header{
 	width: calc(100% - 80px);
 	border-left: 1px solid white;
 }
-#MyNav2 img{
+#MyNav2 .search-bar-icon{
 	height: 141px;
-	margin: 143px 0 49px 0;
+	margin-top: 143px;
+	margin-bottom: 49px;
 }
 .search-bar{
 	margin: 0 auto;
-	width: 40%;
+	width: 40%!important;
+	height: 80px;
 	min-width: 400px;
 	position: relative;
 }
@@ -234,10 +236,16 @@ header{
 .search-bar-bt{
 	width: 80px;
 	height: 80px;
-	background-color: antiquewhite;
+	border: 1px solid white;
 	position: absolute;
 	top: 0;
 	right: 0;
+	z-index: 10;
+}
+.search-bar-bt img{
+	width: 80px;
+	height: 80px;
+	margin: 0;
 }
 #myWindow {
 	display: flex;
@@ -298,6 +306,23 @@ header{
 	   .contentBx2{
 		   margin: 0;
 		   padding: 70px 0;
+	   }
+	   #MyNav2{
+	display: none;
+	position: fixed;
+	top: 70px;
+	left: 0px;
+	right: 0;
+	height: 100vh;
+	background-color: #161616;
+	z-index: 1000;
+    align-items: center;
+	text-align: center;	
+	width: calc(100%);
+	border-left: 1px solid white;
+}
+	   #MyNav2 .search-bar-icon{
+		   display:none;
 	   }
 }
 @font-face{

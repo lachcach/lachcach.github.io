@@ -17,7 +17,7 @@ canadamap.addEventListener("click", function(e){
   sourceImg = province.querySelector("img"),
   imgPath = "img/";
   provinceInfo.innerHTML = "";
-  provinceInfo.insertAdjacentHTML("afterbegin", "<div class=all-hastag><img src="+imgPath + sourceImg.getAttribute('xlink:href')+" alt='"+sourceImg.getAttribute('alt')+"'></div><div class=all-hastag><h3>"+provinceName+"</h3><div class=tag><span class=show-map>"+provinceShow+"</span><div class='space-info'></div><span class=show-map>"+provinceShowa+"</span></div><p>"+provincePara.innerHTML+"</p><div class='btninfo'>"+provinceButton+"</div></div>");
+  provinceInfo.insertAdjacentHTML("afterbegin", "<div class='info'><div class=all-hastag1><img src="+imgPath + sourceImg.getAttribute('xlink:href')+" alt='"+sourceImg.getAttribute('alt')+"'></div><div class=all-hastag2><h3>"+provinceName+"</h3><div class=tag><div class='hastagflex'><span class=show-map>"+provinceShow+"</span><div class='space-info'></div><span class=show-map>"+provinceShowa+"</span></div></div><p>"+provincePara.innerHTML+"</p><div class='btninfo'>"+provinceButton+"</div></div></div>");
   provinceInfo.classList.add("show");
   }else{
 //   provinceInfo.style.opacity = '0';

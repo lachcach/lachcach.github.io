@@ -3,44 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Menu</title>
-	<link rel="stylesheet" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/css.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@500&display=swap" rel="stylesheet">
-
+	<link rel="stylesheet" href="css/map.css">
+	<link rel="icon" href="img/logosymbol-black-01.svg" type="image/svg" sizes="any">
 </head>
 <body>
 		<!--	  Header-->
 <header>
 		<div class="top-menu">
 		 	<ul>
-				<li><a href="index.html"><img src="img/logosymbol-black-01.svg"></a></li>
-				<li><a href="index.html"><img src="img/logo-example.png"></a></li>
-				<li><a href="javascript:void(0)" onClick="myFunction2()" class="nav-toggle2"><img src="img/search magnifying glass.svg"></a></li>
+				<li><a href="index.html"><img src="img/logosymbol-white-01.svg"></a></li>
+				<li><a href="javascript:void(0)" onClick="myFunction2()" class="nav-toggle2"><img src="img/search magnifying glass - neg.svg"></a></li>
 			</ul>
 
 		 </div>
 		
-	 	<nav id="MyNav">
+	 	<nav id="MyNav" class="nav-links">
 		 	<ul>
-				<li><a href="#">Khám Phá</a><div class="modune-boder-right"></div></li>
+				<li><a href="#" class="">Khám Phá</a></li>
 				<li><a href="event.html">Sự Kiện</a></li>
 				<li><a href="learn.html">Lớp Học</a></li>
 				<li><a href="news.html">Tin Tức</a></li>
+				<li><a href="news.html" >Về Chúng Tôi</a></li>
 			</ul>
 			
 		 </nav>
-		 <a href="#" onClick="myFunction()" class="nav-toggle"><img src="img/logo-example.png"></a>
+		 <a href="#" onClick="myFunction()" class="nav-toggle"><img src="img/logosymbol-white-01.svg"></a>
 </header>
 <!--	search-->
 <div id="MyNav2">
-	<img src="img/fulllogo-white-01.svg">
+	<img style="height: 141px; margin: 143px 0 49px 0;" src="img/fulllogo-white-01.svg">
 	<div class="search-bar">
 		<input type="text" class="search-bar-term" placeholder="Từ Khóa">
-		<div class="search-bar-bt"></div>
+		<div class="search-bar-bt"><a href="404.html"><img src="img/search magnifying glass - neg.svg"></a></div>
 	</div>
 </div>
+<div class="cursor"></div>
 <!-- partial:index.partial.html -->
 	<div class="news-menu">
 		<div class="news-menu-inner">
@@ -97,6 +98,8 @@
     <div class="progress-bar" id="progressBar"></div>
   </div> 
 <!-- partial -->
+	<script  src="js/cursor.js"></script>	
+	<script  src="js/map.js"></script>		
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
 	<script  src="js/script.js"></script>
 	<script src="js/process.js"></script>
@@ -110,6 +113,11 @@
 			x.style.display = "block";
 		  }
 		}  
+	</script>
+	<script>
+		function myFunction() {
+		  alert("I am an alert box!");
+		}
 	</script>
 	<script>
 		function myFunction2() {
